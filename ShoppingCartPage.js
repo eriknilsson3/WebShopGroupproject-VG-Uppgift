@@ -14,7 +14,7 @@ function renderShoppingCart() {
             <div class="text-center mt-5">
                 <h4> Your cart is currently empty. </h4>
                 <p class="text-muted"> Head back to the store to add products. </P>
-                <a href="ProductPage.html" class="btn btn-dark mt-3">
+                <a href="Productpage.html" class="btn btn-dark mt-3">
                     Continute Shopping
                 </a>
             </div>
