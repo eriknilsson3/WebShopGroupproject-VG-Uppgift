@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The mejven store</title>
+
+    <!-- Bootstrap CSS (lokal) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Din egen CSS -->
+    <link rel="stylesheet" href="StyleWebShop.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a href="https://jengoransson.github.io/WebshopGroupproject/" class="navbar-brand">The MEJVEN Store</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="https://jengoransson.github.io/WebshopGroupproject/" class="nav-link active" aria-current="page">Home</a>
+                </li>
+            </ul>
+            <div class="navbar-text">
+                <a href="ShoppingCart.html" class="text-white text-decoration-none">
+                    <i class="fa-solid fa-basket-shopping me-2"></i>Shoppingcart
+                </a>
+                <div id="cart-message" class="text-white ms-3" style="opacity: 0; transition: opacity 0.5s;"></div>
+            </div>
+        </div>
+    </nav>
+
+  <div class="position-relative">
+    <img src="https://www.roomservice360.com/media/catalog/product/1/8/18086-01-old-greek.jpg" class="img-fluid w-100"
+         style="height: 300px; object-fit: cover;">
+
+    <div class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white header-text">
+        <h1 class="mb-2">The MEJVEN Store</h1>
+        <h4>Fresh finds. Cool vibes. Always Mejven</h4>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">
+        Hot finds
+        <i class="fa-solid fa-fire fa-lg" style="color: rgb(248, 170, 77);"></i></h2>
+
+    <div class="row g-4" id="productContainer"></div>
+</div>
+
+    <footer class="bg-dark text-white mt-5 py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Kolumn 1 -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5 class="fw-bold">The MEJVEN store</h5>
+                <p class="mb-1">Mejvenstreet 1020</p>
+                <p class="mb-1">123 45</p>
+                <p class="mb-0">mejvenstore@example.com</p>
+            </div>
+
+            <!-- Kolumn 2 -->
+            <div class="col-md-4 mb-4 text-center">
+                <h5 class="fw-bold">Information</h5>
+                <a href="information/about.html" class="text-white d-block">About Us</a>
+                <a href="information/contact.html" class="text-white d-block">Contact Us</a>
+                <a href="information/terms&conditions.html" class="text-white d-block">Terms & Conditions</a>
+                <a href="information/privacy.html" class="text-white d-block">Privacy Policy</a>
+            </div>
+
+            <!-- Kolumn 3 -->
+            <div class="col-md-4 mb-4 text-center text-md-end">
+                <h5 class="fw-bold">Follow Us</h5>
+                <a href="#" target="_blank" class="text-white d-block">
+                    <i class="fa-brands fa-facebook-f me-2"></i> Facebook</a>
+                <a href="#" class="text-white d-block">
+                    <i class="fa-brands fa-instagram me-2"></i> Instagram</a>
+                <a href="#" class="text-white d-block">
+                    <i class="fa-brands fa-tiktok me-2"></i> TikTok</a>
+                <a href="#" class="text-white d-block">
+                    <i class="fa-brands fa-youtube me-2"></i> YouTube</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="ShoppingCart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

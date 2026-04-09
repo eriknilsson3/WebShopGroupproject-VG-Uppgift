@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order – The MEJVEN Store</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="StyleWebShop.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a href="https://jengoransson.github.io/WebshopGroupproject/" class="navbar-brand">The MEJVEN Store</a>
+            <span class="navbar-text">Orderpage</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <a href="Productpage.html" class="btn btn-secondary mb-3">← Back</a>
+        <div class="row mb-5">
+            <div class="col-md-5 text-center">
+                <img id="product-img" src="#" class="img-fluid rounded" alt="Product image">
+            </div>
+
+            <div class="col-md-7">
+                <h2 id="product-name">Product name</h2>
+                <p id="product-description">Product description will appear here.</p>
+                <h4 class="text-success" id="product-price">Price: 0 $</h4>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Orderformulär -->
+        <h3 class="mb-4">Order form</h3>
+
+        <form id="order-form" class="row g-3 needs-validation" novalidate>
+
+            <div class="col-md-6">
+                <label class="form-label">Firstname</label>
+                <input type="text" id="firstname" class="form-control" required>
+                <div class="invalid-feedback">Firstname must be 2-50 characters.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Lastname</label>
+                <input type="text" id="lastname" class="form-control" required>
+                <div class="invalid-feedback">Lastname must be 2-50 characters.</div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Address</label>
+                <input type="text" id="address" class="form-control" required>
+                <div class="invalid-feedback">Address must be 2-50 characters.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Postal code</label>
+                <input type="text" id="postal" class="form-control" required>
+                <div class="invalid-feedback">Postal code must be exactly 5 digits.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">City</label>
+                <input type="text" id="city" class="form-control" required>
+                <div class="invalid-feedback">City must be 2-20 characters.</div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required>
+                <div class="invalid-feedback">Enter a valid email (max 50 characters).</div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Phone</label>
+                <input type="text" id="phone" class="form-control" required>
+                <div class="invalid-feedback">Phone may contain digits, (), - and max 20 characters.</div>
+            </div>
+            
+
+            <div class="col-12">
+                <label class="form-label">Message (optional)</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="col-12 text-end">
+                <button type="submit" class="btn btn-dark btn-lg">Confirm order</button>
+            </div>
+
+        </form>
+        
+        <div class="modal fade" id="orderModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Order received</h5>
+                    </div>
+                
+                <div class="modal-body"> Your order succeeded! Thank you for your order. <br> / The MEJVEN Team
+                </div>
+
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="ShoppingCart.js"></script>
+    <script src="OrderPage.js"></script>
+</body>
+</html>

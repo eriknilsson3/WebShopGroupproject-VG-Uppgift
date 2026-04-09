@@ -1,0 +1,16 @@
+.header-text {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.product-img {
+    height: 140px !important;     /* gör bilden mindre */
+    width: 100% !important;       /* fyller cardens bredd */
+    object-fit: contain !important; /* behåller hela bilden */
+    background-color: #fff;       /* valfritt, men snyggt om bilden inte fyller hela ytan */
+    padding: 5px;                 /* valfritt, ger lite luft runt bilden */
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.55); /* svart transparent */
+    padding: 15px 25px;              /* luft runt texten */
+    border-radius: 8px;              /* rundade hörn (valfritt men snyggt) */
+}
